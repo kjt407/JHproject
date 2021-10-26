@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+        <div id="map"></div>
+        <div id="write-alert">
+            <div class="write-section" id="write-section">
+                <div class="write-title">
+                    CloudMap
+                    <div class="close" onclick="closeWriteOverlay()" title="닫기"></div>
+                </div>
+                <div class="write-body">
+                    <div class="desc">
+                        <div class="write-info" id="ji-bun"></div>
+                        <div class="write-info" id="lat" hidden></div>
+                        <div class="write-info" id="lng" hidden></div>
+                        <div class="write-btn-style"><button class="write-btn" id="write">일지 작성하기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-read">
+            <div class="read-section my">
+                <div class="read-title">
+                    <div>CloudMap</div>
+                    <div class="close" onclick="closeReadInfoWindow()" title="닫기"></div>
+                </div>
+                <div class="read-body">
+                    <div class="desc">
+                        <div class="read-info" id="my-title"></div>
+                        <div class="read-info" id="my-lno" hidden></div>
+
+                        <div class="read-btn-style">
+                            <div class="heart" onclick="closeReadInfoWindow()" title="닫기"></div>
+                            <button class="read-btn" id="my-detail">일지확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="friend-read">
+            <div class="read-section friend">
+                <div class="read-title">
+                    <div>CloudMap</div>
+                    <div class="close" onclick="closeReadInfoWindow()" title="닫기"></div>
+                </div>
+                <div class="read-body">
+                    <div class="desc">
+                        <div class="read-info" id="friend-title"></div>
+                        <div class="read-info" id="friend-lno" hidden></div>
+
+                        <div class="read-btn-style">
+                            <div class="heart" onclick="closeReadInfoWindow()" title="닫기"></div>
+                            <button class="read-btn" id="friend-detail">일지확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</html>
+
